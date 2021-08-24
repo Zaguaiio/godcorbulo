@@ -32,7 +32,9 @@ async def on_message(message):
         'Que tengas un increible dia Guerrero!',
         'Guerrero, no olvides que cualquier dia hay que truinfar, adelante!',
         'Jamas te rindas Guerrero! Toma mi mano y vamos hacia la victoria!',
-        'Estoy contigo, adelante Guerrero!'
+        'Hoy es un dia increible para truinfar Guerrero!',
+        'Por favor, toma mi bendicion aunque no la necesitas, ya eres todo un ganador!',
+        'La vida no es mas que un dia de campo, pero incluso ahi hay que hacer las cosas bien, adelante guerrero!'
     ]
 
     uwu = [
@@ -68,7 +70,7 @@ async def on_message(message):
     if message.channel.name != "los-caballero-de-corbulo-north":
          return
          
-    if message.content.startswith('!bendicion') or message.content.startswith('!bendiceme'):
+    if message.content.startswith('!bendicion') or message.content.startswith('!bendiceme') or message.content.startswith('!bendicenos'):
         print('bendicion detected')
         response = random.choice(bendiciones)
 
